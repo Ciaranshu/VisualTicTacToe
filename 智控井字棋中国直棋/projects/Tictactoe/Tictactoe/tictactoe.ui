@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TictactoeClass</class>
+ <widget class="QMainWindow" name="TictactoeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tictactoe</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>771</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	font: 16pt &quot;方正中等线繁体&quot;;
+
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_menu">
+     <widget class="QPushButton" name="pushButton_OptionHvsH">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>280</width>
+        <height>270</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>人人对战</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_OptionHvsM">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>140</y>
+        <width>280</width>
+        <height>270</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>人机对战</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 20pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>openCV井字棋</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_HvsH">
+     <widget class="QLCDNumber" name="lcdNumber_counterHvsH">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>300</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_swapHvsH">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>420</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>切换选手</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_TimerHvsH">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>180</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_BroadHvsH">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>481</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>棋盘区</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 20pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>人人对战模式</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>260</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 14pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>胜负计数：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>140</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 14pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>比赛计时：</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_HvsM">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 20pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>人机对战模式</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_TimerHvsM">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>180</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_counterHvsM">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>300</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_swapHvsM">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>420</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>切换选手</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_BroadHvsM">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>481</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>棋盘区</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>140</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 14pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>比赛计时：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>260</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	
+	font: 14pt &quot;方正中等线繁体&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>胜负计数：</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Return">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回主菜单</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="tictactoe.qrc"/>
+ </resources>
+ <connections/>
+</ui>
